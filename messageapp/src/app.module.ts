@@ -13,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       username: 'nest',
       password: 'app',
       database: 'sendmeapp_db',
-      entities: [],
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
   ],
